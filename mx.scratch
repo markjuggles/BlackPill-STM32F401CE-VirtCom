@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScratchFile FileVersion="3.0">
+  <FileVersion>3.0</FileVersion>
+  <Workspace>
+    <WorkspaceType>Single-project</WorkspaceType>
+    <WorkspacePath>C:\Users\Mark\STM32CubeIDE\workspace_1.5.0\BlackPill-STM32F401CE-VirtCom\</WorkspacePath>
+    <underRoot>true</underRoot>
+    <TrustZone>0</TrustZone>
+    <HAL_Driver>C:\Users\Mark\STM32Cube\Repository\STM32Cube_FW_F4_V1.25.2\</HAL_Driver>
+    <CMSIS>Drivers/CMSIS</CMSIS>
+    <Toolchain>STM32CubeIDE</Toolchain>
+    <IocFile>BlackPill-STM32F401CE-VirtCom.ioc</IocFile>
+    <Project>
+      <ProjectName>BlackPill-STM32F401CE-VirtCom</ProjectName>
+      <ProjectNature>C</ProjectNature>
+      <Secure />
+      <filestoremove />
+      <sourceEntriesToRemove>
+        <sourceEntry />
+      </sourceEntriesToRemove>
+      <configs>
+        <config>
+          <name>BlackPill-STM32F401CE-VirtCom</name>
+          <mainSourceRepo>Core</mainSourceRepo>
+          <sourceStructure>Advanced</sourceStructure>
+          <device>STM32F401CEUx</device>
+          <cpucore>Arm Cortex-M4</cpucore>
+          <fpu>SP</fpu>
+          <memories>
+            <memory access="xrw" name="RAM" size="96" start="0x20000000" />
+            <memory access="rx" name="FLASH" size="512" start="0x8000000" />
+          </memories>
+          <startup>C:\Users\Mark\STM32Cube\Repository\STM32Cube_FW_F4_V1.25.2\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc\startup_stm32f401xe.s</startup>
+          <LinkSettings>
+            <icfloc />
+            <LinkAdditionalLibs />
+          </LinkSettings>
+          <heapSize>0x400</heapSize>
+          <stackSize>0x400</stackSize>
+          <board>custom</board>
+          <debugprobe />
+          <optimization />
+          <Aincludes>
+            <include />
+          </Aincludes>
+          <Adefines />
+          <Cdefines>
+            <define>USE_HAL_DRIVER</define>
+            <define>STM32F401xE</define>
+          </Cdefines>
+          <Ldefines />
+          <Cincludes>
+            <include>USB_DEVICE\App</include>
+            <include>USB_DEVICE\Target</include>
+            <include>Core\Inc</include>
+            <include>Drivers\STM32F4xx_HAL_Driver\Inc</include>
+            <include>Drivers\STM32F4xx_HAL_Driver\Inc\Legacy</include>
+            <include>Middlewares\ST\STM32_USB_Device_Library\Core\Inc</include>
+            <include>Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc</include>
+            <include>Drivers\CMSIS\Device\ST\STM32F4xx\Include</include>
+            <include>Drivers\CMSIS\Include</include>
+          </Cincludes>
+          <definestoremove>
+            <Adefines />
+            <Cdefines>
+              <define>USE_FULL_LL_DRIVER</define>
+              <define>MBEDTLS_CONFIG_FILE="mbedtls_config.h"</define>
+              <define>USE_FULL_ASSERT=1U</define>
+            </Cdefines>
+            <Ldefines />
+          </definestoremove>
+          <inctoremove>
+            <Aincludes>
+              <include />
+            </Aincludes>
+            <Cincludes />
+          </inctoremove>
+        </config>
+      </configs>
+      <copyAsReference>false</copyAsReference>
+      <sourceEntries>
+        <sourceEntry>
+          <name>Core</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Drivers</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Middlewares</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>USB_DEVICE</name>
+        </sourceEntry>
+      </sourceEntries>
+      <Groups />
+    </Project>
+  </Workspace>
+</ScratchFile>
+
